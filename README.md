@@ -58,9 +58,10 @@ To use the YouTube Music API, you need to generate valid credentials. Follow the
 
 1. **Log in to YouTube Music**: Open YouTube Music in Firefox and ensure you are logged in.
 2. **Open the Inspection Tool**: Press `F12` or right-click and select _Inspect_ to open the browser's inspection tool.
-3. **Access the Network Tab**: Navigate to the Network tab and filter by `/browse`.
-4. **Select a Request**: Click one of the requests under the filtered results and locate the _Request Headers_ section.
-5. **Toggle RAW View**: Click the RAW toggle button to view the headers in raw format.
+3. **Access the Network Tab**: Navigate to the Network tab and filter by `browse?prettyPrint=false`.
+4. **Select a Request**: Click one of the requests under the filtered results, check your "Headers" tab (NOT on the "Request" Tab), then check the Request Headers section.
+5. **Toggle RAW View**: Click the RAW toggle((should be on the right edge of the section)) button to view the headers in raw format. Sample image below.<img width="740" height="381" alt="image" src="https://github.com/user-attachments/assets/d20cc674-d889-4618-872f-ab5d52f8f209" />
+
 6. **Copy Headers**: Right-click, choose _Select All_, and copy the content.
 7. **Paste into `raw_headers.txt`**: Open the `raw_headers.txt` file located in the main directory of this project and paste the copied content into it.
 
